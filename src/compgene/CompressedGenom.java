@@ -4,7 +4,6 @@ import arc.Core;
 import arc.Events;
 import arc.util.Log;
 import arc.util.Time;
-import mindustry.game.EventType.*;
 import mindustry.game.EventType.ClientLoadEvent;
 import mindustry.mod.Mod;
 import mindustry.ui.dialogs.BaseDialog;
@@ -19,10 +18,10 @@ public class CompressedGenom extends Mod{
             //show dialog upon startup
             Time.runTask(10f, () -> {
                 BaseDialog dialog = new BaseDialog("frog");
-                dialog.cont.add("behold").row();
+                dialog.cont.add("babuin").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
                 dialog.cont.image(Core.atlas.find("example-java-mod-frog")).pad(20f).row();
-                dialog.cont.button("I see", dialog::hide).size(100f, 50f);
+                dialog.cont.button("I cannot see", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
         });
