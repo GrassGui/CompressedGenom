@@ -1,4 +1,4 @@
-package example;
+package compgene;
 
 import arc.*;
 import arc.util.*;
