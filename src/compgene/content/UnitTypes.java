@@ -13,7 +13,7 @@ public class UnitTypes {
 
     public static void load() {
 
-        firefly = new UnitType("firefly"){{
+        firefly = new UnitType("dagger"){{
             researchCostMultiplier = 0.5f;
             speed = 0.5f;
             hitSize = 8f;
