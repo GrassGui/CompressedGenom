@@ -1,15 +1,18 @@
 package compgene;
 
-import arc.*;
-import arc.util.*;
+import arc.Core;
+import arc.Events;
+import arc.util.Log;
+import arc.util.Time;
 import mindustry.game.EventType.*;
-import mindustry.mod.*;
-import mindustry.ui.dialogs.*;
+import mindustry.game.EventType.ClientLoadEvent;
+import mindustry.mod.Mod;
+import mindustry.ui.dialogs.BaseDialog;
 
-public class ExampleJavaMod extends Mod{
+public class CompressedGenom extends Mod{
 
-    public ExampleJavaMod(){
-        Log.info("Loaded ExampleJavaMod constructor.");
+    public CompressedGenom(){
+        Log.info("Loaded CompressedGenom constructor.");
 
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
